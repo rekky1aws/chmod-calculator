@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>chmod Calculator</title>
+</head>
+<body onload="refresh();">
+	<button id="changeTheme" onclick="changeTheme(this);">Dark Mode</button>
+	<div id="choix">
+		<span id="user" class="colonne">
+			<h1>Utilisateur</h1>
+			<form>
+				<input type="checkbox" name="userRead" id="uR" value="uR" onclick="refresh();">
+				<label for="uR">Lecture</label>
+
+				<input type="checkbox" name="userWrite" id="uW" value="uW" onclick="refresh();">
+				<label for="uW">Ecriture</label>
+
+				<input type="checkbox" name="userExecution" id="uX" value="uX" onclick="refresh();">
+				<label for="uX">Execution</label>
+			</form>
+		</span>
+
+		<span id="group" class="colonne">
+			<h1>Groupe</h1>
+			<form>
+				<input type="checkbox" name="groupRead" id="gR" onclick="refresh();">
+				<label for="gR">Lecture</label>
+
+				<input type="checkbox" name="groupWrite" id="gW" onclick="refresh();">
+				<label for="gW">Ecriture</label>
+
+				<input type="checkbox" name="groupExecution" id="gX" onclick="refresh();">
+				<label for="gX">Execution</label>
+			</form>
+		</span>
+
+		<span id="other"  class="colonne">
+			<h1>Autres</h1>
+			<form>
+				<input type="checkbox" name="otherRead" id="oR" onclick="refresh();">
+				<label for="oR">Lecture</label>
+
+				<input type="checkbox" name="otherWrite" id="oW" onclick="refresh();">
+				<label for="oW">Ecriture</label>
+
+				<input type="checkbox" name="otherExecution" id="oX" onclick="refresh();">
+				<label for="oX">Execution</label>
+			</form>
+		</span>
+	</div>
+	<div id="resultats">
+		<br><h1>Réslutats :</h1>
+		<div id="resultat"></div>
+	</div>
+</body>
+</html>
