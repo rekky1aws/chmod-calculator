@@ -22,27 +22,27 @@ function refresh()
 	//Mise à jour du résultat
 		//Pour l'utilisateur
 	if(ref_uR.checked)
-		{uP=uP+4;}
+		{uP+=4;}
 	if(ref_uW.checked)
-		{uP=uP+2;}
+		{uP+=2;}
 	if(ref_uX.checked)
-		{uP=uP+1;}
+		{uP+=1;}
 
 		//Pour le groupe
 	if(ref_gR.checked)
-		{gP=gP+4;}
+		{gP+=4;}
 	if(ref_gW.checked)
-		{gP=gP+2;}
+		{gP+=2;}
 	if(ref_gX.checked)
-		{gP=gP+1;}
+		{gP+=1;}
 
 		//Pour les autres
 	if(ref_oR.checked)
-		{oP=oP+4;}
+		{oP+=4;}
 	if(ref_oW.checked)
-		{oP=oP+2;}
+		{oP+=2;}
 	if(ref_oX.checked)
-		{oP=oP+1;}
+		{oP+=1;}
 	
 
 	//Mise a jour de l'affichage du résultat
